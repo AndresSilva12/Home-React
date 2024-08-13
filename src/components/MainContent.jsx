@@ -54,7 +54,7 @@ const MainContent = () => {
                     </div>
                 </div>
 
-                <div className="img-card"></div>
+                {/* <div className="img-card"></div> */}
             </section>
 
         </div>

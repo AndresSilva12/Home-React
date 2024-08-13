@@ -45,16 +45,18 @@
     margin-top: 20px;
 }
         .card-container{ /*Contenedor de todas las tarjetas*/
-            flex: 1 1 60%;
+            flex: 1 1 100%;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
             gap: 1rem;
             max-height: 100vh;
-            background-size: cover;
+            background: linear-gradient(90deg, rgba(27,27,27,1) 0%, rgba(41,41,41,1) 44%, rgba(41,41,41,0.5802696078431373) 100%)
+            ,url(../../src/assets/img/Crombie-45.jpg) center center;
+            background-size: 900px auto; /* Ajusta la imagen en base a su altura */
             background-repeat: no-repeat;
-            /* background: linear-gradient(90deg, rgba(27,27,27,1) 0%, rgba(41,41,41,1) 44%, rgba(41,41,41,0.5802696078431373) 100%); */
-            /* ,url(../../src/assets/img/Crombie-45.jpg) center center; */
+            background-position: right center; /* Coloca la imagen al lado derecho */
+            background-attachment: local;
         }
         
         .card{ /*Estilos generales de Tarjetas */
@@ -163,9 +165,9 @@
             color: black;
         }
         
-        .img-card{
-            flex: 1 1 30%;
-            background-position: center;
+        /* .img-card{
+            flex: 1 1 60%;
+            background-position:center;
             background-size: cover;
             background-color: #1b1b1b;
             background-image: linear-gradient(90deg, rgba(27,27,27,1) 0%, rgba(41,41,41,1) 10%, rgba(41,41,41,0.5802696078431373) 47%)
@@ -173,4 +175,4 @@
             width: 100px;
             height: 500px;
             max-height: 100vh;
-        }
+        } */
