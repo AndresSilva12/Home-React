@@ -22,9 +22,9 @@ const MainContent = () => {
                         <div class="card-green card-deco"></div>
                         
                         <div class="card dev">
-                            <h3>Developer's</h3>
+                            <h3>DEVELOPER'S</h3>
                             <div class="card-content">
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque eveniet exercitationem expedita et aliquid voluptates.</p>
+                                <p>Si sos parte del equipo de colaboradores en Atlas podes ver toda la informacion sobre tu trabajo, tu rendimento y puntos de mejora en crombie.</p>
                                 <a href="#" class="boton-ingresar">Ingresar</a>
                             </div>
                         </div>
@@ -32,9 +32,9 @@ const MainContent = () => {
                     </div>
 
                     <div class="card card-yellow pm">
-                        <h3>Project Manager</h3>
+                        <h3>PROYECT MANAGER</h3>
                         <div class="card-content">
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque eveniet exercitationem expedita et aliquid voluptates.</p>
+                            <p>Si sos parte del equipo de proyect manager en atlas podrás ver la planificacion y toda la informacion  del rendimiento y puntos de mejora de tus equipos.</p>
                             <a href="#" class="boton-ingresar">Ingresar</a>
                         </div>
                     </div>
@@ -44,9 +44,9 @@ const MainContent = () => {
                         <div class="card-pink card-deco"></div>
 
                         <div class="card manager">
-                            <h3>Manager</h3>
+                            <h3>MANAGER</h3>
                             <div class="card-content">
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque eveniet exercitationem expedita et aliquid voluptates.</p>
+                                <p>Si sos manager, en Atlas podes encontrar toda la informacion sobre el rendimiento y puntos de mejora del area de producción.</p>
                                 <a href="#" class="boton-ingresar">Ingresar</a>
                             </div>
                         </div>
