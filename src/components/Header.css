@@ -6,16 +6,14 @@ nav {
     padding-left: 1rem;
     padding-right: 1rem;
     background-color: #292929;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 2px solid rgb(207, 207, 207);
-    height: 70px;
-    width: 100%;
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    /* border-bottom: 2px solid rgb(207, 207, 207); */
+    /* height: 70px; */
+    /* width: 100%; */
     /* padding: 1rem; */
-    position: fixed;
-    top: 0;
-    z-index: 1000;
+    /* position: fixed; */
 }
 
 nav a:hover {
