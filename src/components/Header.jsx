@@ -4,14 +4,14 @@ import './Header.css';
 const Header = () => {
     return(
         <header>
-                <nav>
-                    <a href="home5.html" class="logo"></a>
+            <nav>
+                <a href="home5.html" class="logo "></a>
 
-                    <div class="crombie-logo"></div>
+                <div class="crombie-logo"></div>
                     
-                    <button class="boton-login">Login</button>
-                </nav>
-            </header>
+                <button class="boton-login">Login</button>
+            </nav>
+        </header>
     )
 }
 

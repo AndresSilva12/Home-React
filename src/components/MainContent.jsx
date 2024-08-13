@@ -3,7 +3,7 @@ import './MainContent.css';
 
 const MainContent = () => {
     return(
-        <div>
+        <div class= "main-container">
             <section id="home">
                     <div class="img-container"></div>
                     
@@ -13,44 +13,48 @@ const MainContent = () => {
                     </div>
             </section>
 
-            <section id="card-container">
-                <div class="card-yellow card-deco"></div>
-                    
-                <div class="row-cards">
+            <section id="cards">
+                <div class="card-container">
+                    <div class="card-yellow card-deco"></div>
+                        
+                    <div class="row-cards">
 
-                    <div class="card-green card-deco"></div>
-                    
-                    <div class="card dev">
-                        <h3>Developer's</h3>
+                        <div class="card-green card-deco"></div>
+                        
+                        <div class="card dev">
+                            <h3>Developer's</h3>
+                            <div class="card-content">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque eveniet exercitationem expedita et aliquid voluptates.</p>
+                                <a href="#" class="boton-ingresar">Ingresar</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="card card-yellow pm">
+                        <h3>Project Manager</h3>
                         <div class="card-content">
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque eveniet exercitationem expedita et aliquid voluptates.</p>
                             <a href="#" class="boton-ingresar">Ingresar</a>
                         </div>
                     </div>
 
-                </div>
+                    <div class="row-cards">
 
-                <div class="card card-yellow pm">
-                    <h3>Project Manager</h3>
-                    <div class="card-content">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque eveniet exercitationem expedita et aliquid voluptates.</p>
-                        <a href="#" class="boton-ingresar">Ingresar</a>
-                    </div>
-                </div>
+                        <div class="card-pink card-deco"></div>
 
-                <div class="row-cards">
-
-                    <div class="card-pink card-deco"></div>
-
-                    <div class="card manager">
-                        <h3>Manager</h3>
-                        <div class="card-content">
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque eveniet exercitationem expedita et aliquid voluptates.</p>
-                            <a href="#" class="boton-ingresar">Ingresar</a>
+                        <div class="card manager">
+                            <h3>Manager</h3>
+                            <div class="card-content">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque eveniet exercitationem expedita et aliquid voluptates.</p>
+                                <a href="#" class="boton-ingresar">Ingresar</a>
+                            </div>
                         </div>
-                    </div>
 
+                    </div>
                 </div>
+
+                <div className="img-card"></div>
             </section>
 
         </div>

@@ -1,6 +1,11 @@
+.main-container{
+    padding: 1rem;
+}
+
 #home{
     display: flex;
     height: 90vh;
+    width: 100%;
     margin-top: 4rem;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
@@ -13,7 +18,7 @@
         background-image: url(../../src/assets/img/logo_atlas.png);
         width: auto;
         height: 550px;
-        margin: 10px;
+        margin-right: 10px;
     }
 
     .hero {
@@ -35,9 +40,12 @@
             font-size: 1.5em;
         }
 
-        #card-container{ /*Contenedor de todas las tarjetas*/
-            margin-top: 20px;
-            flex: 1 1 100%;
+#cards{
+    display: flex;
+    margin-top: 20px;
+}
+        .card-container{ /*Contenedor de todas las tarjetas*/
+            flex: 1 1 60%;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
@@ -45,9 +53,8 @@
             max-height: 100vh;
             background-size: cover;
             background-repeat: no-repeat;
-            background: linear-gradient(
-                to right, rgba(0, 0, 0, 0.96), rgba(0, 0, 0, 0))
-            ,url(../../src/assets/img/Crombie-45.jpg) center center;
+            /* background: linear-gradient(90deg, rgba(27,27,27,1) 0%, rgba(41,41,41,1) 44%, rgba(41,41,41,0.5802696078431373) 100%); */
+            /* ,url(../../src/assets/img/Crombie-45.jpg) center center; */
         }
         
         .card{ /*Estilos generales de Tarjetas */
@@ -102,6 +109,7 @@
                 background-color: #ffb12a;
                 width: 250px;
             }
+
         
             .card-green{
                 background-color: rgb(24, 206, 33);
@@ -116,15 +124,27 @@
         .pm{
             width: auto;
         }
+
+        .pm:hover{
+            filter: drop-shadow(0 0 0.5em #ffb12a);
+        }
         
         .dev{
             background-color: #25b2e2;
             width: 200px;
         }
+
+        .dev:hover{
+            filter: drop-shadow(0 0 0.5em #25b2e2);
+        }
         
         .manager{
             background-color: #80319b;
             width: 260px;
+        }
+
+        .manager:hover{
+            filter: drop-shadow(0 0 0.5em #80319b);
         }
         
         .boton-ingresar{
@@ -143,3 +163,14 @@
             color: black;
         }
         
+        .img-card{
+            flex: 1 1 30%;
+            background-position: center;
+            background-size: cover;
+            background-color: #1b1b1b;
+            background-image: linear-gradient(90deg, rgba(27,27,27,1) 0%, rgba(41,41,41,1) 10%, rgba(41,41,41,0.5802696078431373) 47%)
+            ,url(../../src/assets/img/Crombie-45.jpg);;
+            width: 100px;
+            height: 500px;
+            max-height: 100vh;
+        }
