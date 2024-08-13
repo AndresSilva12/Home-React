@@ -72,6 +72,7 @@
         
         .card h3{
             margin: 5px;
+            font-size: 1.5rem;
         }
         
         .row-cards{/*Estilo para varias tarjetas en una fila*/
@@ -95,6 +96,10 @@
             align-items: center;
             text-align: center;
             height: 100%;
+            
+        }
+        .card-content p{ /*espacio en el parrafo de la tarjeta*/
+            padding: 0 12px 0 12px;
         }
         
         .card-deco{ /*Tarjetas decorativas sin ninguna funcion*/
@@ -121,9 +126,6 @@
                 width: 80px;
             }
         
-        .pm{
-            width: auto;
-        }
 
         .pm:hover{
             filter: drop-shadow(0 0 0.5em #ffb12a);
@@ -156,6 +158,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            color: white;
         }
         
         .boton-ingresar:hover{
