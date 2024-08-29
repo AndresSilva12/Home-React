@@ -1,7 +1,7 @@
 @keyframes show{
     from {
         opacity: 0;
-        scale: 25%;;
+        scale: 10%;;
     }
 
     to{
@@ -17,6 +17,6 @@ section{
     animation-timeline: --image;
     animation-name: show;
 
-    animation-range: entry 20% cover 50%;
+    animation-range: entry 10% cover 40%;
     animation-fill-mode: both;
 }
