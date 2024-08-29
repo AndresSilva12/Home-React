@@ -1,181 +1,22 @@
-.main-container{
-    padding: 1rem;
-}
-
-#home{
-    display: flex;
-    height: 90vh;
-    width: 100%;
-    margin-top: 4rem;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
-}
-
-    .img-container {
-        flex: 1 1 40%;
-        background-position: center;
-        background-size: cover;
-        background-color: #1b1b1b;
-        background-image: url(../../src/assets/img/logo_atlas.png);
-        width: auto;
-        height: 550px;
-        margin-right: 10px;
+@keyframes show{
+    from {
+        opacity: 0;
+        scale: 25%;;
     }
 
-    .hero {
-        margin-left: 20px;
-        flex: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: right;
-        color: white;
-        padding-bottom: 150px;
+    to{
+        opacity: 1;
+        scale: 100%;
     }
-
-        .hero h1 {
-            font-size: 4em;
-        }
-
-        .hero p {
-            font-size: 1.5em;
-        }
-
-#cards{
-    display: flex;
-    margin-top: 20px;
 }
-        .card-container{ /*Contenedor de todas las tarjetas*/
-            flex: 1 1 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 1rem;
-            max-height: 100vh;
-            background: linear-gradient(90deg, rgba(27,27,27,1) 0%, rgba(41,41,41,1) 44%, rgba(41,41,41,0.5802696078431373) 100%)
-            ,url(../../src/assets/img/Crombie-45.jpg) center center;
-            background-size: 900px auto; /* Ajusta la imagen en base a su altura */
-            background-repeat: no-repeat;
-            background-position: right center; /* Coloca la imagen al lado derecho */
-            background-attachment: local;
-        }
-        
-        .card{ /*Estilos generales de Tarjetas */
-            display: flex;
-            background-color: rgb(150, 150, 150);
-            border-radius: 10px;
-            text-align: center;
-            align-items: center;
-            justify-content: center;
-            height: 100px;
-            width: auto;
-            margin: 5px;
-            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-        }
-        
-        .card h3{
-            margin: 5px;
-            font-size: 1.5rem;
-        }
-        
-        .row-cards{/*Estilo para varias tarjetas en una fila*/
-            display: flex;
-            flex-direction: row;
-        }
-        
-        
-        .card-content{/*Contenido oculto de las tarjetas*/
-            display: none;
-        }
-        
-        .card:hover {/*Tarjeta desplegada al hacer "hover" sobre una*/
-            width: 650px;
-            height: 100px;
-            filter: drop-shadow(0 0 2em #646cffaa);
-        }
-        
-        .card:hover .card-content{ /*Se muestra el contenido oculto de la tarjeta al hacer "hover"*/
-            display: flex;
-            align-items: center;
-            text-align: center;
-            height: 100%;
-            
-        }
-        .card-content p{ /*espacio en el parrafo de la tarjeta*/
-            padding: 0 12px 0 12px;
-        }
-        
-        .card-deco{ /*Tarjetas decorativas sin ninguna funcion*/
-            height: 100px;
-            border-radius: 10px;
-            margin: 5px;
-            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-        }
-        
-        /*clases para definir colores de tarjetas*/
-            .card-yellow{ 
-                background-color: #ffb12a;
-                width: 250px;
-            }
 
-        
-            .card-green{
-                background-color: rgb(24, 206, 33);
-                width: 180px;
-            }
-        
-            .card-pink{
-                background-color: #ee326c;
-                width: 80px;
-            }
-        
+section{
+    view-timeline-name: --image;
+    view-timeline-axis: block;
 
-        .pm:hover{
-            filter: drop-shadow(0 0 0.5em #ffb12a);
-        }
-        
-        .dev{
-            background-color: #25b2e2;
-            width: 200px;
-        }
+    animation-timeline: --image;
+    animation-name: show;
 
-        .dev:hover{
-            filter: drop-shadow(0 0 0.5em #25b2e2);
-        }
-        
-        .manager{
-            background-color: #80319b;
-            width: 260px;
-        }
-
-        .manager:hover{
-            filter: drop-shadow(0 0 0.5em #80319b);
-        }
-        
-        .boton-ingresar{
-            height: 100%;
-            width: 190px;
-            border-left: 2px solid white;
-            border-top-right-radius: 10px;
-            border-bottom-right-radius: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-        }
-        
-        .boton-ingresar:hover{
-            background-color: white;
-            color: black;
-        }
-        
-        /* .img-card{
-            flex: 1 1 60%;
-            background-position:center;
-            background-size: cover;
-            background-color: #1b1b1b;
-            background-image: linear-gradient(90deg, rgba(27,27,27,1) 0%, rgba(41,41,41,1) 10%, rgba(41,41,41,0.5802696078431373) 47%)
-            ,url(../../src/assets/img/Crombie-45.jpg);;
-            width: 100px;
-            height: 500px;
-            max-height: 100vh;
-        } */
+    animation-range: entry 20% cover 50%;
+    animation-fill-mode: both;
+}
