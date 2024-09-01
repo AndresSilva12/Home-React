@@ -6,9 +6,9 @@ import './MainContent.css'
 const MainContent = () => {
 
     return(
-        <div className= "main-container bg-lightgray text-white px-7 w-screen flex flex-col items-center ">
+        <div className= "main-container bg-lightgray text-white px-7 w-full flex flex-col items-center ">
 
-            <section id = "home" className="bg-gray flex flex-col items-center h-full mt-10 w-full max-w-[900px] shadow-xl shadow-black rounded-2xl md:flex-row p-5 ">
+            <section id = "home" className="bg-darkgray flex flex-col items-center h-full mt-10 w-full max-w-[1200px] shadow-xl shadow-black rounded-2xl md:flex-row p-5 ">
                     <div className="bg-atlasColor bg-center bg-[length:450px_450px] bg-no-repeat w-[450px] h-[450px] rounded-2xl"></div>
                     
                     <div className="mr-16 flex flex-col flex-[50%] justify-center text-left text-white md:p-10 md:text-right">
@@ -20,7 +20,7 @@ const MainContent = () => {
                     </div>
             </section>
 
-            <section className = "bg-gray seccion h-full mt-10 w-full max-w-[900px] shadow-xl shadow-black rounded-2xl">
+            <section className = "bg-darkgray seccion h-full mt-10 w-full max-w-[1200px] shadow-xl shadow-black rounded-2xl">
                         <div className="bg-cover bg-no-repeat  w-full h-full flex flex-col items-start justify-end rounded-2xl p-5 sm:bg-imgContainer1 sm:bg-[length:900px_auto] sm:bg-right">
             
                                 <div className="flex flex-col h-auto w-full pb-5 sm:w-6/12">
@@ -33,7 +33,7 @@ const MainContent = () => {
 
                         </div>
             </section>
-            <section className = "bg-gray seccion h-full mt-10 w-full max-w-[900px] shadow-xl shadow-black rounded-2xl">
+            <section className = "bg-darkgray seccion h-full mt-10 w-full max-w-[1200px] shadow-xl shadow-black rounded-2xl">
                         <div className="bg-cover bg-no-repeat  w-full h-full flex flex-col items-start justify-end rounded-2xl p-5 sm:bg-imgContainer2 sm:bg-[length:900px_auto] sm:bg-right">
             
                                 <div className="flex flex-col h-auto w-full pb-5 sm:w-6/12">
@@ -46,7 +46,7 @@ const MainContent = () => {
 
                         </div>
             </section>
-            <section className = "bg-gray seccion h-full mt-10 w-full max-w-[900px] shadow-xl shadow-black rounded-2xl">
+            <section className = "bg-darkgray seccion h-full mt-10 w-full max-w-[1200px] shadow-xl shadow-black rounded-2xl">
                         <div className="bg-cover bg-no-repeat  w-full h-full flex flex-col items-start justify-end rounded-2xl p-5 sm:bg-imgContainer3 sm:bg-[length:900px_auto] sm:bg-right">
             
                                 <div className="flex flex-col h-auto w-full pb-5 sm:bg-transparent sm:w-6/12">
@@ -61,7 +61,7 @@ const MainContent = () => {
             </section>
 
 
-            <div className="bg-nav-color text-white w-[90vw] max-w-[500px] h-20 mt-20 mb-0 rounded-t-2xl rounded-tr-2xl flex flex-row items-center justify-center">
+            <div className="bg-darkgray text-white w-[90vw] max-w-[500px] h-20 mt-20 mb-0 rounded-t-2xl rounded-tr-2xl flex flex-row items-center justify-center">
                 <a href="https://crombie.dev/" className="flex flex-row items-center justify-center h-full w-[180px]">
                     <div className="bg-logoBlanco bg-center bg-cover w-[180px] h-[40%] mr-5"></div>
                 </a>
