@@ -10,23 +10,25 @@ btnAddTarea.addEventListener('click', ()=>{
         const textoTarea = document.createElement('span')
         textoTarea.textContent = textoInput
         textoTarea.style.textDecoration = "none"
+        textoTarea.setAttribute('class', 'linea')
         nuevaTarea.setAttribute('class', 'item')
         nuevaTarea.appendChild(textoTarea)
         
-        const btnMarcarTarea = document.createElement('button')
-        btnMarcarTarea.textContent = 'Marcar'
+        const btnMarcarTarea = document.createElement('input')
+        btnMarcarTarea.type = 'checkbox'
+        btnMarcarTarea.className = 'checkbox-tarea'
+
         btnMarcarTarea.addEventListener('click', ()=>{
-            if (textoTarea.style.textDecoration == 'none'){
-                textoTarea.style.textDecoration = 'line-through'
-                btnMarcarTarea.textContent = 'Desmarcar'
+            if (btnMarcarTarea.checked){
+                textoTarea.classList.add('tachado')
             }else{
-                textoTarea.style.textDecoration = 'none'
-                btnMarcarTarea.textContent = 'Marcar'
+                textoTarea.classList.remove('tachado')
             }
         })
 
         const btnEliminar = document.createElement('button')
-        btnEliminar.textContent = "Eliminar"
+        btnEliminar.innerHTML = '<i class="fas fa-trash-alt"></i>'
+        // btnEliminar.textContent = "Eliminar"
         btnEliminar.addEventListener('click', ()=>{
             lista.removeChild(nuevaTarea)
         })
